@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'bases';
-}
+  public title:string = 'Hola Mundo!';
+  public counter:number = 10;
+
+
+  setTen(): void{
+     this.counter = 10
+  }
+
+  plusOne(One:number): void{
+    this.counter += One;
+  }
+
+
+  value: string = ''
+  changeValue(){
+    this.value= 'Hola papus'
+  }
+
+
+  }
+
+
+
+
